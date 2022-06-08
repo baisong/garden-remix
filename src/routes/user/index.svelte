@@ -1,22 +1,35 @@
 <script context="module">
-	//var urly = 'https://ok-barometer.vercel.app/api/mood';
-
-   export async function load({ fetch }) {
-        	const urly = 'user/users.json';
-            const response = await fetch(urly);
-            //console.log(response);
-            const responseJson = await response.json();
-            console.log(responseJson);
-
-            return {
-                props: {
-                    responseJson
-                }
-            }
-        }
-	export let responseJson, users, heading;
-	$: users = (typeof responseJson !== "undefined") && responseJson.length;
-	$: heading = users.length ? "Loading..." : users.length + " Users";
+   let users = [{
+		id: "138c3bd6-2aa0-4729-ba06-bffed708b57f",
+		createdAt: "2022-06-08T08:55:44.426Z",
+		updatedAt: "2022-06-08T08:55:44.427Z",
+		name: "Oren",
+		email: "oren@example.com"
+	}, {
+		id: "138c3bd6-2aa0-4729-ba06-bffed708b57f",
+		createdAt: "2022-06-08T08:55:44.426Z",
+		updatedAt: "2022-06-08T08:55:44.427Z",
+		name: "Selim",
+		email: "Johnson95@yahoo.com"
+	}, {
+		id: "e200b188-c8e7-48dd-8363-4b697e9c5168",
+		createdAt: "2022-06-08T08:55:45.473Z",
+		updatedAt: "2022-06-08T08:55:45.474Z",
+		name: "Alimat",
+		email: "Ignatius_MacGyver93@gmail.com"
+	}, {
+		id: "55aa6c57-c471-40a8-84bb-9fdd758a7836",
+		createdAt: "2022-06-08T08:55:46.284Z",
+		updatedAt: "2022-06-08T08:55:46.284Z",
+		name: "Nero",
+		email: "Elmo_Prosacco73@yahoo.com"
+	}, {
+		id: "65743061-3dda-41b6-9939-7a3c6e3df75e",
+		createdAt: "2022-06-08T10:36:18.848Z",
+		updatedAt: "2022-06-08T10:36:18.849Z",
+		name: "Monis",
+		email: "john@example.org"
+	}];
 </script>
 
 <svelte:head>
@@ -24,7 +37,7 @@
 </svelte:head>
 
 <div class="moods">
-	<h1>{heading}</h1>
+	<h1>Users</h1>
 
 {#if users.length}
 

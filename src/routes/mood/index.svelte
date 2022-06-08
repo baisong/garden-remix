@@ -1,20 +1,6 @@
 <script context="module">
-	//var urly = 'https://ok-barometer.vercel.app/api/mood';
 
-   export async function load({ fetch }) {
-        	const urly = '/mood/moods.json';
-            const response = await fetch(urly);
-            //console.log(response);
-            const responseJson = await response.json();
-            console.log(responseJson);
-
-            return {
-                props: {
-                    responseJson
-                }
-            }
-        }
-	export let responseJson, heading;
+	let heading;
 
 	let moods = [{
 		id: "32dc55f9-ff7f-45e5-a599-04d47c8f1434",
@@ -65,7 +51,7 @@
 		idx: 7,
 		label: "hysterical"
 	}];
-	$: heading = moods.length ? "Loading..." : moods.length + " Moods";
+
 </script>
 
 <svelte:head>
@@ -73,15 +59,16 @@
 </svelte:head>
 
 <div class="moods">
-	<h1>{heading}</h1>
+	<h1>Moods</h1>
 
 {#if moods.length}
-
+	<ul>
 	{#each moods as mood (mood.id)}
-		<div>
-			{mood.label}
-		</div>
+		<li>
+			{mood.idx}: {mood.label}
+		</li>
 	{/each}
+	</ul>
 
 {:else}
 
