@@ -1,4 +1,4 @@
-<script context="module">
+<script>
    let users = [{
 		id: "138c3bd6-2aa0-4729-ba06-bffed708b57f",
 		createdAt: "2022-06-08T08:55:44.426Z",

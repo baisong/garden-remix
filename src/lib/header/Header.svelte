@@ -15,18 +15,15 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
+			<li class:active={$page.url.pathname === '/'}><a href="/">Home</a></li>
 			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
+				<a href="/about">About</a>
 			</li>
 			<li class:active={$page.url.pathname === '/user'}>
-				<a sveltekit:prefetch href="/user">Users</a>
+				<a href="/user">Users</a>
 			</li>
 			<li class:active={$page.url.pathname === '/mood'}>
-				<a sveltekit:prefetch href="/mood">Moods</a>
-			</li>
-			<li class:active={$page.url.pathname === '/measure'}>
-				<a sveltekit:prefetch href="/measure">Measures</a>
+				<a href="/mood">Moods</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -35,7 +32,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.">
+		<a target="_blank" href="https://github.com/baisong/garden-remix">GH</a>
 	</div>
 </header>
 
@@ -127,4 +124,6 @@
 	a:hover {
 		color: var(--accent-color);
 	}
+
+	.corner a {font-weight: bold;}
 </style>

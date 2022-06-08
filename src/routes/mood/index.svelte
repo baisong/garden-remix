@@ -1,6 +1,4 @@
-<script context="module">
-
-	let heading;
+<script>
 
 	let moods = [{
 		id: "32dc55f9-ff7f-45e5-a599-04d47c8f1434",
