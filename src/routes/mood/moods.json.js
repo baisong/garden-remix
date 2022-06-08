@@ -1,7 +1,7 @@
 /**
  * This was my attempt at creating a local JSON snapshot.
  */
-export async function get({ params }) { {
+export async function get({ params }) {
 	var records = [{
 		id: "32dc55f9-ff7f-45e5-a599-04d47c8f1434",
 		createdAt: "2022-06-08T08:55:38.134Z",
