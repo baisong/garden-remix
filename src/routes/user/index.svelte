@@ -2,7 +2,7 @@
 	//var urly = 'https://ok-barometer.vercel.app/api/mood';
 
    export async function load({ fetch }) {
-        	const urly = 'https://ok-barometer.vercel.app/api/user';
+        	const urly = 'user/users.json';
             const response = await fetch(urly);
             //console.log(response);
             const responseJson = await response.json();
