@@ -47,6 +47,7 @@
 
 	<ul>
 		<li>Sveltekit has a design pattern, through the .svelte file format, of keeping script, html and css statements in one file. However, the coding assignment asked for things to be kept separate. After about 30 minutes trying to keep files separate and emulate a locally-hosted clone of the API, I realized my time was running low and so I reverted to the design pattern of data inline within .svelte files, simply to have something to show.</li>
+		<li>Demonstrate the most basic features and prepare github repo, vercel production environment, and email response</li> 
 	</ul>
 
 	<h2>This app is built on a framework</h2>
