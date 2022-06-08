@@ -20,7 +20,11 @@
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>About</h1>
+
+	<h2>This app is just a demo</h2>
+
+	<h2>This app is built on a framework</h2>
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the

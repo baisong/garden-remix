@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	import Counter from '$lib/Counter.svelte';
+	import Measure from '$lib/Measure.svelte';
 </script>
 
 <svelte:head>
@@ -13,21 +13,14 @@
 
 <section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
+		ok barometer: garden remix!
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+		built on the <a href="https://ok-barometer.vercel.app/" target="_blank">ok-barometer api</a>
 	</h2>
 
-	<Counter />
+	<Measure />
 </section>
 
 <style>
